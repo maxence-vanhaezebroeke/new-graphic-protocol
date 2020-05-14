@@ -11,10 +11,13 @@ let chaine = "110011001000011110100011101000101100000111001100111010001011110101
 let iterateur = chaine[Symbol.iterator]();
 let caractere = iterateur.next();
 
-function setup() {
-    createCanvas(1344, 756);
+function preload() {
     img = loadImage('img/wpp1.jpg');
     //img2 = loadImage('img/wpp2.jpg');
+}
+
+function setup() {
+    createCanvas(1344, 756);
 }
 
 function draw() {
